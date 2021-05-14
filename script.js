@@ -1,18 +1,18 @@
-var password = "afirmo";
-var response;
-var count = 0;
-var limit = 3;
-var error = false;
+const PASSWORD = "afirmo";
+let RESPONSE;
+let COUNT = 0;
+const LIMIT = 3;
+let ERROR = false;
 
-while(response != password && !error){
-    if (count <= limit)
+while(RESPONSE != PASSWORD && !ERROR){
+    if (COUNT <= LIMIT)
     {
-    response = window.prompt("Enter password");
-    count++;
+    RESPONSE = window.prompt("Enter password");
+    COUNT++;
     }
-    else{error = true;}
+    else{ERROR = true;}
 }
-if (error){
+if (ERROR){
     alert("Too many tries, access denied")
 }
 else{
